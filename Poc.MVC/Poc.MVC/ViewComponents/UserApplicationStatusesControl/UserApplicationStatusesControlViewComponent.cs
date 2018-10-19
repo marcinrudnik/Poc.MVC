@@ -1,8 +1,6 @@
-﻿using System;
-using System.Threading;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Poc.MVC.ViewComponents.ApiBasedControl
+namespace Poc.MVC.ViewComponents.UserApplicationStatusesControl
 {
     public class UserApplicationStatusesControlViewComponent : ViewComponent
     {
@@ -13,10 +11,10 @@ namespace Poc.MVC.ViewComponents.ApiBasedControl
 
         public IViewComponentResult Invoke(int userId)
         {
-            Thread.Sleep(TimeSpan.FromSeconds(5));
+            //Thread.Sleep(TimeSpan.FromSeconds(5));
 
-            if (userId == 100)
-                throw  new ArgumentOutOfRangeException();
+            //if (userId == 100)
+            //    throw  new ArgumentOutOfRangeException();
             return View("Default", userId);
         }
 
