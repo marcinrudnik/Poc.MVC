@@ -1,0 +1,9 @@
+﻿@model GP.Applications.ApplicationsStatus.Contract.ApplicationsInfo
+<h2>Statusy aplikacji dla użytkownika @Model.Total</h2>
+
+@{
+    foreach (var application in Model.Applications)
+    {
+        @Html.Raw(Json.Serialize(application));
+    }
+}

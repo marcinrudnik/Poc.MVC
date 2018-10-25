@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="GP.Applications.ApplicationsStatus.Contract" Version="1.0.0.1246" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Poc.MVC.UserApplicationStatusControl\Poc.MVC.UserApplicationStatusControl.csproj" />
   </ItemGroup>
 
 </Project>
