@@ -63,8 +63,6 @@ namespace Poc.MVC
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
