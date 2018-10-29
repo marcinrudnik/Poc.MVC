@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poc.MVC", "Poc.MVC\Poc.MVC.csproj", "{F95D517A-0968-456B-AEE8-4068BFF89549}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.MVC.UserApplicationStatusControl", "Poc.MVC.UserApplicationStatusControl\Poc.MVC.UserApplicationStatusControl.csproj", "{A75926F2-CAA7-4F62-B15B-1CB37BB1183A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poc.MVC.UserApplicationStatusControl", "Poc.MVC.UserApplicationStatusControl\Poc.MVC.UserApplicationStatusControl.csproj", "{A75926F2-CAA7-4F62-B15B-1CB37BB1183A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
