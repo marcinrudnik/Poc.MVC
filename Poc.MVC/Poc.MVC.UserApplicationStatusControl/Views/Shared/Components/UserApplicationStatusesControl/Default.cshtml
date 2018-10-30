@@ -1,9 +1,38 @@
-﻿@model GP.Applications.ApplicationsStatus.Contract.ApplicationsInfo
-<h2>Statusy aplikacji dla użytkownika @Model.Total</h2>
+﻿<style>
+
+    #poc-vue-test {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .recommendation {
+        width: 250px;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0 0 10px black;
+    }
+</style>
+
+@model GP.Applications.ApplicationsStatus.Contract.ApplicationsInfo
 
 @{
-    foreach (var application in Model.Applications)
-    {
-        @Html.Raw(Json.Serialize(application));
-    }
+    <div id="poc-vue-test">
+        @foreach (var application in Model.Applications)
+        {
+            <div class="recommendation">
+                <h3>@application.JobTitle</h3>
+                <p>@application.Employer</p>
+                <p>@application.Workplace</p>
+
+                <br />
+                <br />
+                <br />
+
+                <p>@application.OfferUrl</p>
+            </div>
+        }
+    </div>
 }
